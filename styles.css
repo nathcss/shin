@@ -40,8 +40,16 @@ button {
 button:hover {
   background-color: #7b68ee;
 }
+
 .surprise-image {
   width: 200px; /* Ajuste o tamanho conforme necessário */
   margin-top: 20px; /* Espaço acima da imagem */
   border-radius: 50px; /* Bordas arredondadas */
+}
+
+/* Adicione esta nova regra */
+video {
+  max-width: 100%; /* O vídeo não sairá da div */
+  height: auto; /* Mantém a proporção do vídeo */
+  border-radius: 10px; /* Bordas arredondadas (opcional) */
 }
