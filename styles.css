@@ -8,29 +8,29 @@ body {
 
 .container {
   text-align: center;
-  padding: 50px;
+  padding: 20px; /* Menos padding em dispositivos móveis */
   background: linear-gradient(135deg, #6a0dad, #4b0082);
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  max-width: 600px;
-  margin: 100px auto;
+  max-width: 90%; /* Aumenta a largura máxima em dispositivos móveis */
+  margin: 50px auto; /* Menos margem em dispositivos móveis */
 }
 
 h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
+  font-size: 2em; /* Tamanho menor em dispositivos móveis */
+  margin-bottom: 15px;
 }
 
 p {
-  font-size: 1.2em;
-  margin: 15px 0;
+  font-size: 1em; /* Tamanho menor em dispositivos móveis */
+  margin: 10px 0;
 }
 
 button {
   background-color: #8a2be2;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 15px; /* Ajuste no padding */
   border-radius: 5px;
   font-size: 1em;
   cursor: pointer;
@@ -42,14 +42,29 @@ button:hover {
 }
 
 .surprise-image {
-  width: 200px; /* Ajuste o tamanho conforme necessário */
-  margin-top: 20px; /* Espaço acima da imagem */
-  border-radius: 50px; /* Bordas arredondadas */
+  width: 100%; /* Imagem ocupa toda a largura */
+  max-width: 200px; /* Limita o tamanho máximo */
+  margin-top: 20px;
+  border-radius: 50px;
 }
 
-/* Adicione esta nova regra */
 video {
   max-width: 100%; /* O vídeo não sairá da div */
   height: auto; /* Mantém a proporção do vídeo */
-  border-radius: 10px; /* Bordas arredondadas (opcional) */
+  border-radius: 10px;
+}
+
+/* Consultas de mídia para dispositivos móveis */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8em; /* Tamanho do título em dispositivos móveis */
+  }
+
+  p {
+    font-size: 0.9em; /* Tamanho do parágrafo em dispositivos móveis */
+  }
+
+  button {
+    padding: 8px 12px; /* Menos padding no botão em dispositivos móveis */
+  }
 }
